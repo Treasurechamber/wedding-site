@@ -81,7 +81,7 @@ export default function MasterPage() {
   const [editingUserId, setEditingUserId] = useState<string | null>(null)
   const [editRole, setEditRole] = useState<'admin' | 'master'>('admin')
   const inviteUrl = ''
-  const inviteLinkCopied = false
+  const [inviteLinkCopied, setInviteLinkCopied] = useState(false)
   const inviteLinkRef = useRef<HTMLInputElement>(null)
   const [dragOver, setDragOver] = useState<Label | null>(null)
   const [coupleIdCopied, setCoupleIdCopied] = useState(false)
